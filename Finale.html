@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développeur Web à Domicile</title>
+    <style>
+        /* Style global */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .contact {
+            background: #4CAF50;
+            padding: 50px 20px;
+            color: white;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            color: #333;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact button {
+            padding: 12px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background: #45a049;
+        }
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Développeur Web Freelance Professionnel</h1>
+        <p>Sites web modernes - Développement mobile - Assistance rapide</p>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Besoin d'un Site ou d'une Application ?</h1>
+        <p>Je réalise votre projet digital sur-mesure, adapté à vos besoins..</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Mes Services</h2>
+        <p>Développement Web | Applications Mobiles | Design Moderne | Assistance Technique</p>
+    </section>
+
+    <section id="projets" class="section" style="background: #f1f1f1;">
+        <h2>Projets Réalisés</h2>
+        <p>Sites vitrines, boutiques e-commerce, applications Android/iOS, portfolios professionnels...</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-moi</h2>
+        <p>Appelez ou écrivez-moi sur WhatsApp :</p>
+        <p><a href="https://wa.me/224621322765" style="color: white; text-decoration: underline;">+224 621 322 765</a></p>
+
+        <!-- Formulaire de contact avancé -->
+        <form action="https://formspree.io/f/xeogovre" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            
+            <!-- Champ invisible pour anti-spam -->
+            <input type="text" name="_honey" style="display:none">
+            
+            <!-- Ne pas stocker sur formspree -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Message après envoi -->
+            <input type="hidden" name="_next" value="https://votre-site.com/merci.html">
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Développeur Web Freelance - Tous droits réservés
+    </footer>
+
+</body>
+</html>
